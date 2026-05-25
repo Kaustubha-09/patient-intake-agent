@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "patient-intake-agent"
+version = "1.0.0"
+description = "Terminal-based patient intake and scheduling AI agent with GPT-4o tool calls"
+authors = ["Kaustubha <eluri.k@northeastern.edu>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+openai = "^2.3.0"
+python-dotenv = "^1.2.2"
+requests = "^2.33.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

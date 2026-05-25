@@ -1,0 +1,44 @@
+# Secrets
+.env
+.env.local
+*.key
+*.pem
+secrets.toml
+
+# Session logs (per-run, may contain user input)
+intake.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Poetry
+.poetry/
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local config
+local.properties
