@@ -15,14 +15,11 @@ A working intake agent that demonstrates a specific architectural pattern: **the
 
 ## Screenshots
 
-Terminal session captures live in [`Screenshots/`](Screenshots/). To capture: run `poetry run python main.py --demo`, screenshot the terminal, drop in with the index prefix.
+<p align="center">
+  <img src="Screenshots/01_full_demo_session.png" width="780" alt="Patient Intake Agent — full demo session" />
+</p>
 
-| Capture | Surface |
-|---|---|
-| `01_agent_run.png` | Full LLM agent run — intro, name, address validation, slot offering |
-| `02_routine_scheduling.png` | Routine triage path — Primary Care selection, slot pick, confirmation |
-| `03_emergency_escalation.png` | Emergency path — chest pain → 911 redirect, no scheduling |
-| `04_demo_mode.png` | `--demo` mode without API keys |
+A full `poetry run python main.py --demo` session: name → DOB → insurance → symptoms → address (Google-Maps-verified) → provider selection from the mock registry → slot pick → confirmation summary → audit-log close-out. The same flow runs against the real GPT-4o agent in non-demo mode; only the conversational text generation is mocked.
 
 ---
 
